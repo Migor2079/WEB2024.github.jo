@@ -1,0 +1,343 @@
+@font-face {
+    font-family: FiraSansRegular;
+    src: url('fonts/FiraSansCondensed-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: FiraSansRegular;
+    src: url('fonts/FiraSansCondensed-Regular.ttf') format('ttf');
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'FiraSansRegular';
+}
+
+a {
+    text-decoration: none;
+}
+
+/* НАЧАЛО ШАПКИ САЙТА */
+.header-container {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+}
+
+.header-nav ul {
+    width: 800px;
+    height: 50px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 200px;
+    list-style-type: none;
+}
+
+.header-nav ul li {
+    width: 120px;
+    border-left: 1px solid white;
+    padding-left: 5px;
+}
+
+.cont-item a {
+    color: white;
+    transition: 0.3s;
+}
+.cont-item a:hover {
+    color: rgb(38, 124, 252);
+}
+
+.header-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/header-img.jpg);
+    width: 100%;
+    height: 450px;
+    background-repeat: round;
+}
+
+.photo-content {
+    color: white;
+    text-align: center;
+    align-items: flex-end;
+    width: 600px;
+}
+
+.photo-content h3 {
+    padding-top: 20px;
+    font-size: 25px;
+}
+/* КОНЕЦ ШАПКИ САЙТА */
+
+/* ВРАППЕР ДЛЯ ГРАНИЦ ИНФОРМАЦИИ */
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* НАЧАЛО ОСНОВНОЙ ИНФОРМАЦИИ О СЕБЕ */
+.about {
+    width: 100%;
+    height: 250px;
+}
+
+.zagolovok {
+    padding: 20px 0px 20px 0px;
+    font-size: 30px;
+}
+
+.about-text {
+    width: 500px;
+    font-size: 20px;
+}
+
+.about img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: right;
+    bottom: 80px;
+}
+
+.competencies{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: white;
+}
+
+.compet-photo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.compet-item {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.compet-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.uslugi {
+    width: 100%;
+    height: 300px;
+}
+
+.two-column-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-column-list ul {
+    width: 45%;
+    padding: 0;
+}
+.two-column-list ul li {
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.achievement {
+    width: 100%;
+    background-color: black;
+    height: 250px;
+    color: white;
+}
+
+.achiev {
+    text-align: center;
+}
+
+.achiev-text {
+    font-size: 20px;
+}
+
+.form-buttn {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(81, 185, 255, 0.7);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color:rgb(32, 166, 255);
+    color: white;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid black;
+
+}
+
+.copyright {
+    float: right;
+}
+
+.contacts a img {
+    width: 40px;
+    height: 40px;
+}
+/* КОНЕЦ ОСНОВНОЙ ИНФОРМАЦИИ О СЕБЕ */
+
+/* НАЧАЛО РЕЗЮМЕ */
+.rez-zag {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+th, td {
+    border: 2px solid rgb(0, 60, 255);
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+td {
+    text-align: left;
+}
+
+td ul li {
+    margin-left: 15px;
+}
+
+.color  {
+    background-color: rgb(34, 115, 207);
+    color: white;
+}
+/* КОНЕЦ РЕЗЮМЕ */
+
+/* НАЧАЛО ПОРТФОЛИО */
+.portf-block {
+    width: 100%;
+    height: 250px;
+}
+
+.portf-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(0, 60, 255);
+}
+
+.portf-content {
+    width: 100%;
+    padding-left: 100px;
+}
+
+.portf-content.two {
+    padding: 0px;
+}
+
+.portf-block img {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.portf-block.two img {
+    padding-top: 20px;
+}
+
+.portf-text {
+    font-size: 20px;
+}
+
+.portf-block:last-child {
+    margin-bottom: 50px;
+}
+/* КОНЕЦ ПОРТФОЛИО */
+
+/* НАЧАЛО КОНТАКТОВ */
+.contacts-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.contacts-item {
+    width: 310px;
+    height: 250px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.contacts-item div .zagolovok {
+    padding-bottom: 50px;
+}
+
+.contacts-item div:last-child {
+    font-size: 20px;
+}
+
+.wrapper.forma {
+    height: 500px;
+}
+
+.formas {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.formas div {
+    margin: 20px 0px 20px 0px;
+}
+
+.form {
+    border: 2px solid rgb(0, 60, 255);
+}
+
+.inpt {
+    width: 200px;
+    height: 25px;
+}
+
+.inpt-buttn {
+    width: 150px;
+    height: 50px;
+}
